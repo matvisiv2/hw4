@@ -99,12 +99,12 @@ body {
   background-color: #AEAEE2;
 }
 
-.reserve-box-img {
+.reserve-box-inner-img {
   width: 485px;
   height: 244px;
 }
 
-.reserve-box-star {
+.reserve-box-inner-star {
   position: absolute;
   top: 17px;
   right: 17px;
@@ -130,17 +130,17 @@ body {
   background-color: #EF075B;
 }
 
-.reserve-box-subbox {
+.reserve-box-inner-subbox {
   width: 712px;
   height: 184px;
 }
 
-.reserve-box-subbox hr{
+.reserve-box-inner-subbox hr{
   border: 2px solid white;
   margin-top: 0;
 }
 
-.reserve-box-subbox h2 {
+.reserve-box-inner-subbox h2 {
   color: #353C57;
   font-style: italic;
   font-weight: 700;
@@ -149,14 +149,14 @@ body {
   margin: 0;
 }
 
-.reserve-box-subbox-text {
+.reserve-box-inner-subbox-text {
   text-align: center;
   margin: auto;
   padding: 20px 24px;
   background-color: #D7D7DD;
 }
 
-.reserve-box-subbox-text p {
+.reserve-box-inner-subbox-text p {
   font-size: 22px;
   font-weight: 400;
   line-height: 28.47px;
