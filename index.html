@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk-UA">
 
 <head>
   <meta charset="UTF-8">
@@ -14,129 +14,172 @@
 </head>
 
 <body>
-  <header class="header">
-    <div class="menu d-flex jc-sa ai-c">
-      <div class="menu-item">
-        <img src="images/svg/mountains.svg" alt="mountains">
-      </div>
-      <div class="menu-item">
-        ГОЛОВНА
-      </div>
-      <div class="menu-item">
-        ПРО НАС
-      </div>
-      <div class="menu-item">
-        ЗАБРОНЮВАТИ
-      </div>
-      <div class="menu-item">
-        КОНТАКТИ
-      </div>
-      <div class="menu-item">
-        ОСОБИСТИЙ КАБІНЕТ
-      </div>
-      <div class="menu-item d-flex ai-c">
-        <img src="images/svg/language.svg" alt="language">
-        <div>UA</div>
-      </div>
-      <div>
+  <div class="wrapper">
 
+    <header class="header">
+      <div class="header__content">
+        <a href="" class="header__logo">
+          <img class="header__logo-img" src="images/svg/mountains.svg" alt="mountains">
+        </a>
+        <nav class="header__menu menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="" class="menu__link">ГОЛОВНА</a>
+            </li>
+            <li class="menu__item">
+              <a href="" class="menu__link">ПРО НАС</a>
+            </li>
+            <li class="menu__item">
+              <a href="" class="menu__link">ЗАБРОНЮВАТИ</a>
+            </li>
+            <li class="menu__item">
+              <a href="" class="menu__link">КОНТАКТИ</a>
+            </li>
+            <li class="menu__item">
+              <a href="" class="menu__link">
+                <div>ОСОБИСТИЙ</div>
+                <div>КАБІНЕТ</div>
+            </li>
+            <li class="menu__item">
+              <div class="d-flex ai-c">
+                <img class="menu__item__lang-img" src="images/svg/language.svg" alt="language">
+                <a href="" class="menu__link">
+                  <div>UA</div>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </nav>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <main class="main">
-    <h1 class="title">Забронювати будиночок</h1>
-    <div class="reserve">
-      <div class="reserve-title">Оберіть місце розташування</div>
-
-      <div class="reserve-box">
-        <div class="reserve-box-inner d-flex jc-sb">
-          <img class="reserve-box-inner-img" src="images/img-1.png" alt="Незвідана Бакота ">
-          <div class="reserve-box-inner-subbox">
-            <h2>Незвідана Бакота</h2>
-            <hr />
-            <div class="reserve-box-inner-subbox-text">
-              <p>
-                У Хмельницькій області розташований загублений край -
-                Бакота. Мальовничий каньйон з давньою історією захоплює
-                своїми просторами та незвичною атмосферою. Бджільництво,
-                свіжий мед із польових трав, дотик до природи.
-              </p>
-            </div>
-          </div>
-          <img class="reserve-box-inner-star" src="images/svg/star-yellow.svg" alt="star">
-          <button class="reserve-box-inner-btn">Детальніше</button>
+    <main class="page">
+      <section class="page__main reserve">
+        <div class="title-box">
+          <h1 class="title">
+            Забронювати будиночок
+          </h1>
         </div>
-      </div>
 
-      <div class="reserve-box">
-        <div class="reserve-box-inner d-flex jc-sb">
-          <img class="reserve-box-inner-img" src="images/img-2.png" alt="Полонина карпат">
-          <div class="reserve-box-inner-subbox">
-            <h2>Полонини Карпат </h2>
-            <hr />
-            <div class="reserve-box-inner-subbox-text">
-              <p>
-                Полонини Карпат, у селі Орів посеред гір
-                розташувався затишний куточок для незабутніх
-                вражень. Справжні українські гори, власноручне
-                сироваріння на полонині, водоспади та
-                вікові дерева чекають на Вас.
-              </p>
-            </div>
+        <div class="reserve__container">
+          <div class="reserve__container__title">
+            Оберіть місце розташування
           </div>
-          <img class="reserve-box-inner-star" src="images/svg/star.svg" alt="star">
-          <button class="reserve-box-inner-btn">Детальніше</button>
 
-        </div>
-      </div>
-
-      <div class="reserve-box">
-        <div class="reserve-box-inner d-flex jc-sb">
-          <img class="reserve-box-inner-img" src="images/img-3.png" alt="Автентична Київщина">
-          <div class="reserve-box-inner-subbox">
-            <h2>Автентична Київщина </h2>
-            <hr />
-            <div class="reserve-box-inner-subbox-text">
-              <p>
-                Неподалік центра Києва розташувалось автентичне українське село на території однойменного села Пирогово.
-                Дерев’яні млини, запашний хліб, приготовлений своїми руками, українські пісні та багато іншого чекає на
-                вас уже зараз.
-              </p>
+          <div class="reserve__container__box">
+            <img class="reserve__container__box__img" src="images/img-1.png" alt="Незвідана Бакота ">
+            <div class="reserve__container__box__subbox">
+              <h2>Незвідана Бакота</h2>
+              <hr />
+              <div class="reserve__container__box__subbox__text">
+                <p>
+                  У Хмельницькій області розташований загублений край -
+                  Бакота. Мальовничий каньйон з давньою історією захоплює
+                  своїми просторами та незвичною атмосферою. Бджільництво,
+                  свіжий мед із польових трав, дотик до природи.
+                </p>
+              </div>
             </div>
+            <img class="reserve__container__box__star" src="images/svg/star-yellow.svg" alt="star">
+            <button class="reserve__container__box__btn">Детальніше</button>
           </div>
-          <img class="reserve-box-inner-star" src="images/svg/star.svg" alt="star">
-          <button class="reserve-box-inner-btn">Детальніше</button>
 
-        </div>
-      </div>
-
-      <div class="reserve-box">
-        <div class="reserve-box-inner d-flex jc-sb">
-          <img class="reserve-box-inner-img" src="images/img-4.png" alt="Нетипова Одещина">
-          <div class="reserve-box-inner-subbox">
-            <h2>Нетипова Одещина </h2>
-            <hr />
-            <div class="reserve-box-inner-subbox-text">
-              <p>
-                В Одеській області знаходиться мальовниче містечко Вилкове.
-                Його ще називають «українською Венецією». Вилкове - це містечко
-                на воді, весь в каналах. Розташоване в місці, де зустрічаються річка
-                Дунай і Чорне море. Люди пересуваються переважно човнами.
-                Нетипове українське село не залишить Вас без вражень.
-              </p>
+          <div class="reserve__container__box">
+            <img class="reserve__container__box__img" src="images/img-2.png" alt="Полонина карпат">
+            <div class="reserve__container__box__subbox">
+              <h2>Полонини Карпат</h2>
+              <hr />
+              <div class="reserve__container__box__subbox__text">
+                <p>
+                  Полонини Карпат, у селі Орів посеред гір
+                  розташувався затишний куточок для незабутніх
+                  вражень. Справжні українські гори, власноручне
+                  сироваріння на полонині, водоспади та
+                  вікові дерева чекають на Вас.
+                </p>
+              </div>
             </div>
+            <img class="reserve__container__box__star" src="images/svg/star.svg" alt="star">
+            <button class="reserve__container__box__btn">Детальніше</button>
           </div>
-          <img class="reserve-box-inner-star" src="images/svg/star.svg" alt="star">
-          <button class="reserve-box-inner-btn">Детальніше</button>
 
+          <div class="reserve__container__box">
+            <img class="reserve__container__box__img" src="images/img-3.png" alt="Автентична Київщина">
+            <div class="reserve__container__box__subbox">
+              <h2>Автентична Київщина</h2>
+              <hr />
+              <div class="reserve__container__box__subbox__text">
+                <p>
+                  Неподалік центра Києва розташувалось автентичне українське село на території однойменного села
+                  Пирогово.
+                  Дерев’яні млини, запашний хліб, приготовлений своїми руками, українські пісні та багато іншого чекає
+                  на
+                  вас уже зараз.
+                </p>
+              </div>
+            </div>
+            <img class="reserve__container__box__star" src="images/svg/star.svg" alt="star">
+            <button class="reserve__container__box__btn">Детальніше</button>
+          </div>
+
+          <div class="reserve__container__box">
+            <img class="reserve__container__box__img" src="images/img-4.png" alt="Нетипова Одещина">
+            <div class="reserve__container__box__subbox">
+              <h2>Нетипова Одещина</h2>
+              <hr />
+              <div class="reserve__container__box__subbox__text">
+                <p>
+                  В Одеській області знаходиться мальовниче містечко Вилкове.
+                  Його ще називають «українською Венецією». Вилкове - це містечко
+                  на воді, весь в каналах. Розташоване в місці, де зустрічаються річка
+                  Дунай і Чорне море. Люди пересуваються переважно човнами.
+                  Нетипове українське село не залишить Вас без вражень.
+                </p>
+              </div>
+            </div>
+            <img class="reserve__container__box__star" src="images/svg/star.svg" alt="star">
+            <button class="reserve__container__box__btn">Детальніше</button>
+          </div>
         </div>
-      </div>
-    </div>
-  </main>
+      </section>
 
-  <footer class="footer">
-  </footer>
+      <section class="page__main profile">
+        <div class="title-box">
+          <h1 class="title">
+            Особистий кабінет
+          </h1>
+        </div>
+
+        <div class="profile">
+          <div class="profile__box">
+            <div class="profile__box__actions">
+              <img class="profile__box__actions__img" src="images/svg/avatar.svg" alt="avatar">
+              <button class="profile__box__actions__btn">Змінити аватар</button>
+              <button class="profile__box__actions__btn">Налаштування</button>
+            </div>
+            <div class="profile__box__info">
+              <p class="profile__box__info__field"><span class="profile__box__info__field__title">Петров Іван Іванович</span></p>
+              <hr/>
+              <p class="profile__box__info__field"><span class="profile__box__info__field__title">Стать:</span> чоловіча</p>
+              <hr/>
+              <p class="profile__box__info__field"><span class="profile__box__info__field__title">Дата народження:</span> 10. 02. 1998</p>
+              <hr/>
+              <p class="profile__box__info__field"><span class="profile__box__info__field__title">Мобільний телефон:</span> +38(097)346-72-50</p>
+              <hr/>
+              <p class="profile__box__info__field"><span class="profile__box__info__field__title">Ел. пошта:</span> petrov@gmail.com</p>
+            </div>
+
+          </div>
+          <button class="profile__btn">Вийти</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      footer
+    </footer>
+
+  </div>
 </body>
 
 </html>
