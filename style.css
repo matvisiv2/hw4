@@ -101,10 +101,6 @@ body {
   cursor: pointer;
 }
 
-[class*='__btn']:hover {
-  background-color: #EF075B;
-}
-
 @media (max-width: 1536.98px) {
   [class*='__container'] {
     max-width: 1180px;
@@ -296,6 +292,7 @@ body {
     font-size: 30px;
     line-height: 100px;
     margin-left: calc(var(--title-margin-left)/1.2);
+    margin-bottom: 36px;
   }
 }
 
@@ -332,7 +329,18 @@ body {
 }
 
 .reserve__container__box:hover {
+  transition: all 0.25s;
   background-color: #AEAEE2;
+  box-shadow: 5px 5px 30px 0px #0000FF40;
+}
+
+.reserve__container__box:hover button {
+  background-color: #EF075B;
+}
+
+
+.reserve__container__box:hover:hover .reserve__container__box__star{
+  background-image: url(images/svg/star-yellow.svg);
 }
 
 .reserve__container__box__img {
@@ -378,9 +386,13 @@ body {
 }
 
 .reserve__container__box__star {
+  padding: 0;
+  width: 50px;
+  height: 50px;
   position: absolute;
   top: 17px;
   right: 17px;
+  background: no-repeat url(images/svg/star.svg);
 }
 
 .reserve__container__box__btn {
@@ -425,10 +437,6 @@ body {
     font-size: 18px;
     font-weight: 400;
     line-height: 25px;
-  }
-
-  .reserve__container__box__star {
-    width: 40px;
   }
 }
 
