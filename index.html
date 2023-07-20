@@ -6,16 +6,33 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HW4</title>
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script lang="javascript">
+    // ===== Scroll to Top ==== 
+    function scrollCheck() {
+      if (window.scrollY >= 50) {        // If page is scrolled more than 50px
+        document.getElementById('#return-to-top').style.setProperty('display', 'block');    // Fade in the arrow
+      } else {
+        document.getElementById('#return-to-top').style.setProperty('display', 'none');   // Else fade out the arrow
+      }
+    };
+
+    function returnToTop() {      // When arrow is clicked
+      window.scrollTo(0, 0);
+      document.getElementsByTagName('body')[0].animate({
+        scrollTop: 0                       // Scroll to top of body
+      }, 500);
+    };
+  </script>
 </head>
 
-<body>
+<body onscroll="scrollCheck()">
   <div class="wrapper">
-
     <header class="header">
       <div class="header__content">
         <a href="" class="header__logo">
@@ -61,11 +78,13 @@
           </h1>
         </div>
 
+        <!-- <a onclick="returnToTop()" id="#return-to-top"><i class="return-to-top icon-chevron-up"></i></a> -->
+        <a onclick="returnToTop()" id="#return-to-top" class="return-to-top"><i class="icon-chevron-up"></i></a>
+
         <div class="reserve__container">
           <div class="reserve__container__title">
             Оберіть місце розташування
           </div>
-
           <div class="reserve__container__box">
             <img class="reserve__container__box__img" src="images/img-1.png" alt="Незвідана Бакота ">
             <div class="reserve__container__box__subbox">
@@ -159,7 +178,8 @@
             </div>
             <div class="profile__box__info">
               <span class="profile__box__info__field__title"></span>
-              <input class="profile__box__info__field profile__box__info__field__title" type="text" value="Петров Іван Іванович">
+              <input class="profile__box__info__field profile__box__info__field__title" type="text"
+                value="Петров Іван Іванович">
               <hr />
               <span class="profile__box__info__field__title">Стать:</span>
               <select class="profile__box__info__field">
@@ -171,8 +191,8 @@
               <input class="profile__box__info__field" type="date" value="1998-02-10" min="1970-01-01" max="2023-01-01">
               <hr />
               <span class="profile__box__info__field__title">Мобільний телефон:</span>
-              <input class="profile__box__info__field" type="tel" id="phone" size="15" name="phone" value="+38(097)346-72-50"
-                pattern="+38([0-9]{3})[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
+              <input class="profile__box__info__field" type="tel" id="phone" size="15" name="phone"
+                value="+38(097)346-72-50" pattern="+38([0-9]{3})[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
               <hr />
               <span class="profile__box__info__field__title">Ел. пошта:</span>
               <input class="profile__box__info__field" type="email" id="email" value="petrov@gmail.com"
@@ -249,7 +269,6 @@
         &copy; 2021 HolidayTime. All rights reserved.
       </div>
     </footer>
-
   </div>
 </body>
 
