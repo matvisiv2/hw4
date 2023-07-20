@@ -207,10 +207,10 @@ body {
   border-radius: 167px;
 }
 
-.header__menu {}
+/* .header__menu {} */
 
 /* #region menu */
-.menu {}
+/* .menu {} */
 
 .menu__list {
   display: flex;
@@ -220,7 +220,7 @@ body {
   row-gap: 15px;
 }
 
-.menu__item {}
+/* .menu__item {} */
 
 .menu__link {
   font-size: 24px;
@@ -534,4 +534,4 @@ body {
 /* #endregion */
 /* #endregion */
 
-.footer {}
+/* .footer {} */
