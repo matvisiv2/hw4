@@ -151,30 +151,34 @@
         </div>
 
         <div class="profile">
-          <div class="profile__box">
+          <form action="" method="get" class="profile__box">
             <div class="profile__box__actions">
               <img class="profile__box__actions__img" src="images/svg/avatar.svg" alt="avatar">
               <button class="profile__box__actions__btn">Змінити аватар</button>
               <button class="profile__box__actions__btn">Налаштування</button>
             </div>
             <div class="profile__box__info">
-              <p class="profile__box__info__field"><span class="profile__box__info__field__title">Петров Іван
-                  Іванович</span></p>
+              <span class="profile__box__info__field__title"></span>
+              <input class="profile__box__info__field profile__box__info__field__title" type="text" value="Петров Іван Іванович">
               <hr />
-              <p class="profile__box__info__field"><span class="profile__box__info__field__title">Стать:</span> чоловіча
-              </p>
+              <span class="profile__box__info__field__title">Стать:</span>
+              <select class="profile__box__info__field">
+                <option value="male">чоловіча</option>
+                <option value="female">жіноча</option>
+              </select>
               <hr />
-              <p class="profile__box__info__field"><span class="profile__box__info__field__title">Дата
-                  народження:</span> 10. 02. 1998</p>
+              <span class="profile__box__info__field__title">Дата народження:</span>
+              <input class="profile__box__info__field" type="date" value="1998-02-10" min="1970-01-01" max="2023-01-01">
               <hr />
-              <p class="profile__box__info__field"><span class="profile__box__info__field__title">Мобільний
-                  телефон:</span> +38(097)346-72-50</p>
+              <span class="profile__box__info__field__title">Мобільний телефон:</span>
+              <input class="profile__box__info__field" type="tel" id="phone" size="15" name="phone" value="+38(097)346-72-50"
+                pattern="+38([0-9]{3})[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
               <hr />
-              <p class="profile__box__info__field"><span class="profile__box__info__field__title">Ел. пошта:</span>
-                petrov@gmail.com</p>
+              <span class="profile__box__info__field__title">Ел. пошта:</span>
+              <input class="profile__box__info__field" type="email" id="email" value="petrov@gmail.com"
+                pattern=".+@.+\.com" size="20" required>
             </div>
-
-          </div>
+          </form>
           <button class="profile__btn">Вийти</button>
         </div>
       </section>

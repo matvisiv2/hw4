@@ -57,6 +57,7 @@ body {
 
 /* #endregion */
 
+/* #region body */
 body {
   line-height: 1;
   font-family: 'PT Sans', sans-serif;
@@ -80,6 +81,8 @@ body {
 .page__main {
   margin-bottom: 50px;
 }
+
+/* #endregion */
 
 /* #region __class */
 [class*='__container'] {
@@ -296,6 +299,8 @@ body {
   }
 }
 
+/* #endregion */
+
 /* #region reserve */
 .reserve__container__title {
   margin: auto;
@@ -339,7 +344,7 @@ body {
 }
 
 
-.reserve__container__box:hover:hover .reserve__container__box__star{
+.reserve__container__box:hover:hover .reserve__container__box__star {
   background-image: url(images/svg/star-yellow.svg);
 }
 
@@ -476,6 +481,7 @@ body {
 .profile__box__actions__btn {
   width: 250px;
   height: 50px;
+  background: #484A54;
 }
 
 .profile button:hover {
@@ -485,12 +491,20 @@ body {
 .profile__box__info {
   font-size: 36px;
   font-style: italic;
-  line-height: 47px;
+  line-height: 37px;
   text-align: left;
 }
 
 .profile__box__info__field {
+  font-size: 36px;
+  font-style: italic;
+  line-height: 37px;
+  text-align: left;
+  color: var(--main-text-color);
   margin: 0;
+  margin-bottom: 4px;
+  background: none;
+  border: none;
 }
 
 .profile__box__info__field__title {
@@ -531,6 +545,12 @@ body {
 
   .profile__box__info {
     font-size: 22px;
+    line-height: 27px;
+  }
+
+  .profile__box__info__field {
+    font-size: 22px;
+    line-height: 27px;
   }
 
   .profile__box__info hr {
@@ -615,8 +635,8 @@ body {
 /* #endregion */
 
 /* #endregion */
-/* #endregion */
 
+/* #region footer */
 .footer {
   background-color: var(--main-text-color);
 }
@@ -637,3 +657,5 @@ body {
     margin-left: 100px;
   }
 }
+
+/* #endregion */
